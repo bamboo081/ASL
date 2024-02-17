@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ASL Translator</h1>
+        <img src="asl_animation.gif" alt="ASL Animation">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#translator">Translator</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About ASL Translator</h2>
+        <p>This website helps you translate text into American Sign Language (ASL) gestures.</p>
+    </section>
+    <section id="translator">
+        <h2>ASL Translator</h2>
+        <textarea id="textInput" placeholder="Enter text to translate"></textarea>
+        <button onclick="translateToASL()">Translate</button>
+        <div id="aslOutput"></div>
+    </section>
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://www.lifeprint.com/asl101/pages-layout/concepts.htm">ASL basic stuff</a></li>
+            <li><a href="https://www.handspeak.com/">ASL dictionary</a></li>
+            <li><a href="https://www.startasl.com/asl-dictionary">ASL Starter</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; ASL translator thing.</p>
+    </footer>
+
+    <script>
+        function translateToASL() {
+            var inputText = document.getElementById("textInput").value;
+            // Your translation logic here
+            // Example: Translate text to ASL signs
+            var translatedText = "ASL translation for '" + inputText + "' goes here.";
+            document.getElementById("aslOutput").innerText = translatedText;
+        }
+    </script>
+</body>
+</html>
